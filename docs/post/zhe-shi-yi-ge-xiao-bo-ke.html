@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
-    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/54253932?v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -16,7 +16,7 @@ Github的语法里面有5中警报强调信息，分别是NOTE TIP IMPORTANT WAR
 Github的语法里面有5中警报强调信息，分别是NOTE TIP IMPORTANT WARNING CAUTION 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://yue25699.github.io/yue-bk/post/zhe-shi-yi-ge-xiao-bo-ke.html">
-<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/54253932?v=4">
 <title>这是一个小博客</title>
 
 
@@ -103,7 +103,7 @@ Note</p>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 </div>
-    <div id="footer">Copyright © <span id="year"></span><a href="https://yue25699.github.io/yue-bk"> Blog Title </a>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://yue25699.github.io/yue-bk"> 岳的博客 </a>
 <p>
 <span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
 </p>
@@ -156,7 +156,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="2";
+    cmButton.appendChild(span);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
